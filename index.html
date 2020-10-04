@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Important Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>Digital Clock with Alarm</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Fontawesome JS -->
+    <script src="assets/js/all.min.js"></script>
+
+<body>
+    <audio id="myAudio"> 
+        <source src="assets/audio/alarm.mp3" type="audio/mpeg">
+      </audio>    
+    <div class="alarm-wrapper">
+        <div class="close-alarm-wrapper-btn"><i class="fas fa-window-close"></i></div>
+        <div class="alarm-onoff-buttons fix">
+            <div class="on">ON</div>
+            <div class="off">OFF</div>
+        </div>
+        <div class="alarm-display">
+            <span class="alarm-hours">05</span> :
+            <span class="alarm-minutes">00</span> :
+            <span class="alarm-seconds">00</span> :
+            <span class="alarm-ampm">AM</span>
+            
+        </div>
+        <div class="alarm-timepicker-wrapper">
+            <div class="alarm-timepicker fix">
+                <div class="alarm-timepicker-hours timepicker-component">
+                    <button class="count-plus"><img src="./assets/images/angle-up.png" alt=""> </button>
+                    <input class="alarm-input-hours" type="text" value="05">
+                    <button class="count-minus"><img src="./assets/images/angle-down.png" alt=""></button>
+                </div>
+                <div class="alarm-timepicker-minutes timepicker-component">
+                    <button class="count-plus"><img src="./assets/images/angle-up.png" alt=""> </button>
+                    <input class="alarm-input-minutes" type="text" value="00">
+                    <button class="count-minus"><img src="./assets/images/angle-down.png" alt=""></button>
+                </div>
+                <div class="alarm-timepicker-seconds timepicker-component">
+                    <button class="count-plus"><img src="./assets/images/angle-up.png" alt=""> </button>
+                    <input class="alarm-input-seconds" type="text" value="00">
+                    <button class="count-minus"><img src="./assets/images/angle-down.png" alt=""></button>
+                </div>
+                <div class="alarm-timepicker-ampm timepicker-component">
+                    <button class="count-plus"><img src="./assets/images/angle-up.png" alt=""> </button>
+                    <span class="ampm-input">AM</span>
+                    <button class="count-minus"><img src="./assets/images/angle-down.png" alt=""> </button>
+                </div>
+            </div>
+            <div class="timepicker-close"><i class="fas fa-window-close"></i></div>
+        </div>
+    </div>
+    <div class="clock-wrapper">
+        <button class="alarm-open-btn">Alarm</button>
+        <br>
+        <span class="hours">09</span> :
+        <span class="minutes">18</span> :
+        <span class="seconds">17</span>
+        <span class="ampm">PM</span>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
